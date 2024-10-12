@@ -21,7 +21,7 @@ app.config.suppress_callback_exceptions = True
 # Load data from csv
 def load_data():
     # Cargar el archivo CSV en un DataFrame
-    df = pd.read_csv(r'C:\Users\georf\Desktop\MIAD\Despliegue de soluciones analíticas\Semana 1\Repositorios\datos_energia.csv')
+    df = pd.read_csv('datos_energia.csv')
 
     # Convertir la columna de fecha a formato datetime
     df['time'] = pd.to_datetime(df['time'])
